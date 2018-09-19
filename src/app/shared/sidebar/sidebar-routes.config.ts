@@ -7,15 +7,29 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'Dashboard', icon: 'fas fa-tachometer-alt', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     },
     {
-        // tslint:disable-next-line:max-line-length
-        path: '/full-layout', title: 'Contacts', icon: 'ft-user', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-    },
+        path: '', title: 'Contacts', icon: 'ft-user',
+         class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
+        submenu: [
+            { path: '/contacts/form', title: 'Add Contact', icon: '', class: '',
+             badge: '', badgeClass: '', isExternalLink: false, submenu: [],
+            },
+            { path: '/contacts/list', title: 'Contacts Lists', icon: '', class: '',
+             badge: '', badgeClass: '', isExternalLink: false, submenu: [],
+            },
+        ]
+        },
     {
         path: '', title: 'Items', icon: 'icon-handbag',
          class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
-            { path: 'javascript:;', title: 'Items', icon: '', class: '',
-             badge: '', badgeClass: '', isExternalLink: true, submenu: [],
+            {
+                path: '', title: 'Items', icon: '', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
+                submenu: [
+                    { path: '/items/add', title: 'Add Item', icon: '',
+                     class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+                    { path: '/items/list', title: 'Items Lists', icon: '',
+                     class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+                ]
             },
         ]
         },
@@ -102,6 +116,10 @@ export const ROUTES: RouteInfo[] = [
     // {
     //     path: '/changelog', title: 'ChangeLog', icon: 'ft-file', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
     // },
+    { path: '/chat', title: 'Chat', icon: 'ft-message-square',
+    class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+    { path: '/folders', title: 'Files', icon: 'icon-folder-alt',
+    class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
     { path: '/changelog', title: 'Reports', icon: 'ft-activity',
     class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 

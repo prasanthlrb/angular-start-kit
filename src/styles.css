@@ -13,4 +13,30 @@
 @import url("../src/assets/css/data-table/index.css");
 @import url("../src/assets/css/data-table/icons.css");
 @import url("../src/assets/css/demo.css"); */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@charset "UTF-8";
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #FFF;
+  box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06); }
+
+.main-panel {
+  /* margin-top: 50px;  */
+  padding-top: 85px;
+}
+.app-sidebar, .off-canvas-sidebar{
+    z-index: 6;
+}
